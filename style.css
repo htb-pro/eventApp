@@ -428,7 +428,7 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
    } 
    section .content 
    {
-    width: 50vw;
+    width: 52vw;
     margin: 1.5rem 0px;
     font-size: 18px;
     animation: none;
@@ -446,6 +446,7 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
    {
     width: 80%;
     color: rgb(61, 60, 60);
+     margin-top:1rem;
    }
    .members
    {
@@ -460,10 +461,17 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
     padding: 10px;
     border-radius: 50%;
     position: relative;
+    margin-bottom:1rem;
+   }
+    .formImage
+   {
+    margin-top: 1rem;
    }
    footer 
    {
     font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
    }
 /*--------------------------------------------about style-----------------------------------*/
     .container
