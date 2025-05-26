@@ -67,27 +67,17 @@ section::before
     position: absolute;
     background-image:linear-gradient(to right,#4b0fb3 55%,transparent 90%);
 }
-/* section::after
-{
-    width: 30%;
-    height: 100%;
-    translate: -50% -96.5%;
-    content: "";
-    z-index: 1;
-    position: absolute;
-    background-image:url('Pictures/treeImage.jpg');
-    background-position: 50% 50%;
-} */
+
 .content
 { /*le style du contenu de la section*/
     width: 35vw;
     height: auto;
-    margin: 6rem 8rem; 
+    margin: 6rem 6rem; 
     transition: all 1.0s ease;
     animation:  margin_decal 1s ;
     position: relative;
     font-size: 20px;
-    color:black;
+    color: rgb(177, 176, 176);
     padding: 5px;
 }
 @keyframes margin_decal {
@@ -95,7 +85,7 @@ section::before
          margin: 6rem 1rem;
     }
     to{
-         margin: 6rem 8rem;
+         margin: 6rem 6rem;
     }
 }
 .content span
@@ -128,13 +118,6 @@ section::before
     border-top: 1px solid black;
     justify-content: center;
 }
-.members .formImage img
-{
-    border-radius: 50%;
-    cursor: pointer;
-     
-}
-
 .members ~ .formImage
 {
     width: 150px;
@@ -143,7 +126,22 @@ section::before
     border-radius: 50%;
     transition: all 1s;
     margin-top: 1rem;
+    position: relative;
 }
+.formImage
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.members .formImage img
+{
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    border-left:10px solid yellow;
+}
+
 .members  .formImage .presentation
 {
     display: none;
@@ -182,6 +180,7 @@ section::before
     display: flex;
     flex-direction: row;
     padding-top: 10px;
+    /* border-top: 1px solid black; */
     padding-bottom: 10px;
     justify-content: center;
 }
@@ -192,7 +191,15 @@ section::before
     transition: all 1s;
     margin-left: 10px;
 }
- 
+.descriptions .aboutUs
+{
+    width: 10vw;
+    height: auto;
+    background-color: yellow;
+    color: black;
+    position: absolute;
+    left: 0px;
+}
 .description h2:hover,.description:hover
 {
     color: black;
@@ -204,17 +211,16 @@ footer
 	height: auto;
 	display: flex;
 	flex-direction: column;
+    color:rgb(177, 176, 176);
 	background-color : #4b0fb3;
 }
 footer .contact 
 {
-	color: rgb(0, 0,0);
 	font-size: 25px;
 	text-align: center;
 }
 footer .confident
 {
-	color: rgb(0, 0,0);
 	font-size: 25px;
 	text-align: center;
 }
@@ -223,7 +229,7 @@ footer .confident
 {/*l'element container des autres elements*/
     width: 35%;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.251);
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 10% 35%;
     padding: 10px;
     justify-content: center;
@@ -257,7 +263,7 @@ footer .confident
 label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le label ayant les classes selectionnees*/
 {
     font-size: 22px;/*la taille de la police sera de 22 par defaut*/
-    color: black;/*la couleur de la police sera blanche*/
+    color: silver;/*la couleur de la police sera blanche*/
     margin-left: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
@@ -276,7 +282,7 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
 {
     display: block;
     margin-top: -1.5rem;
-    color: black;
+    color: white;
 }
 #home:checked ~ .homeContainer  .link_home a 
 {
@@ -302,19 +308,19 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
 {
     display: block;
     margin-top: -1.5rem;
-     color: black;
+     color: white;
 }
 #contact:checked ~ .contactContainer
 {
     display: block;
     margin-top: -1.5rem;
-     color: black;
+     color: white;
 }
 #skills:checked ~ .skillsContainer
 {
     display: block;
     margin-top: -1.5rem;
-     color: black;
+     color: white;
 }
 
 #home:checked ~ .labels  .slider
@@ -349,6 +355,11 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
         background-color : #4b0fb3;
         position: relative;
         text-align: center;
+        border-radius: 10px;
+    }
+    header span
+    {
+        display: inline;
     }
      header.show
     {
@@ -432,6 +443,7 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
     margin: 1.5rem 0px;
     font-size: 18px;
     animation: none;
+    margin-bottom: 1rem;
    }
     section .content span 
    {
@@ -442,17 +454,29 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
     flex-direction: column;
     text-align: center;
    }
+  .descriptions h2.aboutUs
+{/*le syle de la class aboutus de h2 sur le mobile*/
+    width: 30vw;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    position: relative;
+    left: 7rem;
+}
    .description
    {
     width: 80%;
     color: rgb(61, 60, 60);
-     margin-top:1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
    }
    .members
    {
     width: 25%;
     flex-direction: column;
-    margin-left: 7rem;
+    margin-left: 6rem;
     border-top: none;
    }
    .members h2
@@ -461,9 +485,10 @@ label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le lab
     padding: 10px;
     border-radius: 50%;
     position: relative;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
    }
-    .formImage
+   .formImage
    {
     margin-top: 1rem;
    }
