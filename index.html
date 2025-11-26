@@ -1,99 +1,431 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--les icons -->
-     <script src="index.js" defer></script> 
-    <title>Go-talent</title>
+<title>Twenty-one network</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="Css/style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- police  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!--policy-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- js links -->
+<script src="index.js" defer></script>
 </head>
 <body>
+    <!-- le header -->
     <header>
-        <span>Go-talent</span><span class="eventElement"> event</span>
-        <div class="nav">
-            <a href="index.html" class="link L1">home</a>
-            <a href="About.html" class="link L2">about Us</a>
-            <a href="#" class="link L3">Contact</a>
-            <!-- <a href="#" class="link L4"></a> -->
-        </div>
-         <div class="toggle_bars">
-            <div class="bar B1"></div>
-            <div class="bar B2"></div>
-            <div class="bar B3"></div>
+        <div class="row contact-informations">
+            <div class="col d-flex flex-column flex-md-row flex-lg-row justify-content-center align-items-center">
+                <p><span><i class="bi bi-telephone"></i> : </span><span>  +243 897 401 210</span></p>
+                <p class="ms-2"><span><i class="bi bi-envelope-at-fill"></i> : </span><span>automatecenter@info.com</span></p>
+            </div>
         </div>
     </header>
-    <section>
-        <div class="content">
-            <span class="firstPart">Bienvenu chez</span> <span class="secondPart">Go-talent</span> <span class="thirdPart">event</span>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni,
-                 dolores omnis odit repudiandae natus laudantium consectetur distinctio,
-                  consequuntur 
-	    </p>
-	</div>
-    </section>
-    
-    <div class="descriptions">
-        <h2 class="aboutUs">About us</h2>
-        <div class="description D1">
-            <h2>Notre vision</h2>
-            <p class="firstDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni,
-                 dolores omnis odit repudiandae natus laudantium consectetur distinctio,</p>
-        </div>
-        <div class="description D2">
-              <h2>Notre mission</h2>
-            <p class="secondDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni,
-                 dolores omnis odit repudiandae natus laudantium consectetur distinctio,</p>
-        </div>
-        <div class="description D3">
-              <h2>Nos objectifs</h2>
-            <p class="thirdDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni,
-                 dolores omnis odit repudiandae natus laudantium consectetur distinctio,</p>
-        </div>
-    </div>
-    <div class="members">
-        <h2>Members</h2>
-        <div class="formImage FI1">  
-            <div class="presentation">
-                <h3>Presentation</h3>
-                <p>Author 1 dolor sit amet consectetur adipisicing elit. Architecto magni</p>
+    <!-- la navbar-->
+<nav class="navbar   d-flex justify-content-end navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Automate center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-links">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Qui somme-nous?</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Nous joindre</a>
+                </li>
+            </ul>
             </div>
-            <img src="Pictures/avatarProfil.jpg" alt="not found" width="150px" height="150px">
-        </div> 
-        <div class="formImage FI2"> 
-            <div class="presentation">
-                <h3>Presentation</h3>
-                <p>Author 2 dolor sit amet consectetur adipisicing elit. Architecto magni</p>
-            </div> 
-            <img src="Pictures/avatarProfil.jpg" alt="not found" width="150px" height="150px">
-        </div>
-        <div class="formImage FI3"> 
-            <div class="presentation">
-                <h3>Presentation</h3>
-                <p>Author 3 dolor sit amet consectetur adipisicing elit. Architecto magni</p>
-            </div>    
-            <img src="Pictures/avatarProfil.jpg" alt="not found" width="150px" height="150px">
-        </div>
-        <div class="formImage FI4"> 
-            <div class="presentation">
-                <h3>Presentation</h3>
-                <p>Author 4 dolor sit amet consectetur adipisicing elit. Architecto magni</p>
-            </div>  
-            <img src="Pictures/avatarProfil.jpg" alt="not found" width="150px" height="150px">
+    </div>
+</nav>
+<!--la carouselle -->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-inner " style="height: 75vh;">
+    <div class="carousel-item active " >
+      <!-- <img src="Pictures/robotique image.jpg" class="d-block w-100 " alt="not found"> -->
+      <div class="carousel-caption">
+        <h1>Bienvenu chez automate center</h1> 
+        <p>Nous accompagnons les organisations dans la mise en place de solutions numériques fiables, accessibles et innovantes.
+        <p>Nous sommes specialises dans l'automatisation, le developpement de logiciel, la maintenance informatique et bien plus
+<br>Simplifiez votre quotidien.</p>
+        <p><a href="avis_form.html" class="btn_show_form btn btn-primary  mt-0" style="color: white;">Demander un avis</a></p>
+      </div>
+      
+      <div class="image-section">
+        <img src="Pictures/cloud image.png" alt="not found" width="400px" height="400px">
+      </div>
+    </div>
+    
+</div>
+</div>
+    <div class="row mb-5" style="margin-top: 2rem;">
+        <div class="container text-dark text-center w-50">
+            <h2><b>Nos services</b></h2>
+            <span>Des solutions adaptées a vos besoins pour vous simplifier la vie et booster votre performance</span> 
         </div>
     </div>
-    <footer>
-        <footer>
-		<div class="contact">
-            
-			<p><span><i class="fa fa-phone" aria-hidden="true"></i> : </span><span>+243 </span></p>
-			<p><span><i class="fa fa-envelope-o" aria-hidden="true"></i> : </span><span>@gmail.com</span></p>
-			<p><span><i class="fa fa-linkedin-square" aria-hidden="true"></i> : </span>Username linkdin</p>
-		</div>
-		<div class="confident">
-			<span><i class="fa fa-copyright" aria-hidden="true"></i> </span><span class="Rights">Tout droits reservés</span>
-		</div>
-	</footer>
-    </footer>
+<!-- fin de la sous section -->
+    <div class="container ">
+	<div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 " >
+	    <div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+            <img src="Pictures/maintenance.png" class="card-img-top" alt="not found">
+            <div class="card-body">
+                <h5 class="card-title">Maitenance et dépanage informatique</h5>
+                <p class="card-text">
+                    Nous proposons un service adapté de dépanage et maintenance pour vos ordinateurs et peripherique. <br>
+                    <span>✔Diagnostic rapide et précis</span><br>
+                    <span>✔ Réparation matérielle et logicielle</span><br>
+                    <span>✔ Mise à jour et optimisation des systèmes</span>
+    Notre objectif : garantir la performance et la sécurité de vos outils informatiques, tout en prolongeant leur durée de vie.
+                </p>
+            </div>
+	   </div>
+        </div>
+         <!---->
+                <div class="col-12 col-md-6 col-lg-3">
+		<div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;"">
+  <img src="Pictures/sauvegardes.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Service Cloud</h5>
+    <p class="card-text">
+                Sécurisez vos données grâce au services <b>microsoft 365</b> que nous  offrons pour la gestion de vos donnees et la collaboration en ligne.<br>
+            <span>✔ Sauvegarde automatique vos données oneDrive ou sharpoint</span><br>
+            <span>✔ Communication en equipe avec teams, outlook</span><br>
+            <span>✔ Collaboration en equipe avec office 365</span><br>
+            <span>✔ Accès sécurisé à vos fichiers à distance</span><br>
+            <span>✔ Restauration rapide en cas de perte de données</span>
+            <br><b>Avec nous, vos informations professionnelles restent protégées et disponibles à tout moment. </b>
+    </p>
+  </div>
+  </div>
+</div>
+        <!---->
+            <div class="col-12 col-md-6 col-lg-3" >
+	   <div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+            <img src="Pictures/services bureatique.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Service de Bureautique</h5>
+                <p class="card-text">
+
+                    Que ce soit pour vos besoins personnels ou professionnels, nous offrons une formation de microsoft office​ et office 365:<br>
+                    <span>✔ Word​<br></span>
+                    <span>✔ Excel​<br></span>
+                    <span>✔ PowerPoint<br>​</span>
+                    <span>✔ E-mail<br>​</span>
+Nous mettons à votre disposition des outils modernes pour valoriser vos présentations et vos supports de communication.
+.
+                </p>
+            </div>
+	  </div>
+            </div>
+	</div>
+<div class="row mt-3 d-flex justify-content-center">
+	<div class="col-12 col-md-6 col-lg-3">
+     	<div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+            <img src="Pictures/bureautique.jpeg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Formation Informatique</h5>
+                <p class="card-text">
+                    Nous accompagnons particuliers, étudiants et entreprises dans l’apprentissage et maitrise des outils numériques.<br>
+                    <span>✔ Initiation à l’informatique (Internet, messagerie)</span><br>
+                    <span>✔ Formation aux logiciels spécialisés (Word, Excel, PowerPoint, etc.)</span><br>
+                    <span>✔ Manipulation de l'ordinateur</span><br>
+                    <span>✔ Ateliers pratiques adaptés à votre niveau</span>
+                    <br><b>Un suivi personnalisé est assuré afin de garantir une progression efficace.</b>
+                </p>
+            </div>
+	</div>
+    </div>
+   <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+        <img src="Pictures/cyberSecurite.png" class="card-img-fluid object-fit-fill"  alt="not found">
+        <div class="card-body">
+            <h5 class="card-title">🔒 Cybersécurité & Protection des Données</h5>
+            <p class="card-text">
+                Protégez votre entreprise et vos données personnelles contre les menaces en ligne.<br>
+                <span>✔ Installation d’antivirus et pare-feu</span><br>
+                <span>✔ Sécurisation des réseaux</span><br>
+                <span>✔ Sensibilisation et conseils en bonnes pratiques numériques</span><br>
+                <b>Nous veillons à renforcer votre sécurité pour travailler en toute confiance.</b>
+            </p>
+        </div>
+    </div>
+	</div>
+    
+    <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+                <img src="Pictures/data-analysis.jpeg" class="card-img-fluid " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">🔍 Analyse de Données</h5>
+                    <p class="card-text">
+                        Transformez vos données en décisions stratégiques. <br>
+                        Chez automate center, nous vous aidons à donner un sens aux chiffres. Grâce à des outils modernes d’analyse et de visualisation, nous transformons vos informations brutes en rapports clairs, compréhensibles et exploitables.<br>
+                        🚀 Nos prestations incluent :
+                        Collecte et organisation des données : centralisation et structuration de vos informations.
+                    </p>
+                </div>
+            </div>
+        </div><!--fin de la col-->
+        </div>
+
+	<div class="row g-2 d-flex flex-grow-1 mt-3 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+                <img src="Pictures/programming.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Programmation</h5>
+                    <p class="card-text">
+                        Optimisez votre visibilité avec la mise en place d'un site ou d'une application web.
+                        Créer un site internet est une expression de sérieux dans votre activité, entreprise.
+                        Des applications sur mesure pour booster vos performances.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" >
+            <div class="col card h-100" style="width: 20rem; background-color:#a0c9f443;color:#333333;">
+                <img src="Pictures/developpement web.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Developement web</h5>
+                    <p class="card-text">
+                        Offrez une identité visuelle moderne et impactante à votre site. avec nous automatisez vos tâches quotidiennes  à un prix abordable
+                    </p>
+                </div>
+            </div>
+        </div>
+	</div>
+    <!--endblock of third row-->
+                    </div>
+    </div> 
+    <section>
+        <div class="container  w-50">
+        <div class="row mt-5">
+            <div class="col   text-dark text-center ">
+                    <h2><b>Nos projets</b></h2>
+                    <span>Des projets innovants concus dans chacun service principale qu'offre automate center, enfin de booster votre performance</span>
+            </div> 
+        </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="img-area">
+                                <img src="" alt="">
+                            </div>
+                            <h2 class="card-title">Cloud</h2>
+                            <p class="lead" style="font-family: 'Montserrat', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
+                            </p>
+                            <button class="btn btn-warning ">Lire plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="img-area">
+                                <img src="" alt="">
+                            </div>
+                            <h2 class="card-title">Developpement logiciel</h2>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
+                            </p>
+                            <button class="btn btn-warning ">Lire plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="img-area">
+                                <img src="" alt="">
+                            </div>
+                            <h2 class="card-title">Bureatique</h2>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
+                            </p>
+                            <button class="btn btn-warning ">Lire plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="img-area">
+                                <img src="" alt="">
+                            </div>
+                            <h2 class="card-title">Maintenance et support informatique</h2>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
+                            </p>
+                            <button class="btn btn-warning ">Lire plus</button>
+                        </div>
+                    </div>
+                </div>
+        </div>     
+    </div>
+    </section>
+    <!--Fin section de projet-->
+    <section>
+        <div class="container  w-50">
+        <div class="row mt-3 mb-3">
+            <div class="col   text-dark text-center ">
+                    <h2><b>Nos membre</b></h2>
+                    <span>
+                        Des experts passionnés à votre service pour des solution performantes et fiables. <br>
+                        cliquez sur l'image pour voir la desctiption de l'auteur
+                    </span>
+            </div> 
+        </div>
+        </div>
+        <div class="container">
+        <div class="row d-flex flex-row mt-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="member">
+                    <div class="member-img M1">
+                        <img src="Pictures/avatarProfil.jpg" alt="Not found">
+                    </div>
+                    <div class="member-description md1">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda,</span></br>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="member">
+                    <div class="member-img M2">
+                        <img src="Pictures/avatarProfil.jpg" alt="Not found">             
+                    </div>
+                    <div class="member-description md2">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda,</span></br>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="member">
+                    <div class="member-img M3">
+                        <img src="Pictures/avatarProfil.jpg" alt="Not found">
+                    </div>
+                    <div class="member-description md3">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda,</span></br>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="member">
+                    <div class="member-img M4">
+                        <img src="Pictures/avatarProfil.jpg" alt="Not found">
+                    </div>
+                    <div class="member-description md4">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda,</span></br>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        const boutton=document.querySelector('.labelService');
+        const contact=document.querySelector('.Contact');
+        const join=document.querySelector('.joinUs');
+        boutton.addEventListener('click',scroller);
+        contact.addEventListener('click',contacter);
+        join.addEventListener('click',joindre);
+        function scroller(){
+            scrollTo(
+                0,
+                580,
+                behavior="smooth");
+        }
+        function contacter(){scrollTo(0,2200)}
+        function joindre(){scrollTo(0,2200)}
+    </script>
+    <script nomodule><p>Activate your javascript in your navigator please </p> </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed(".Salutation",
+            {strings: ["Bienvenu sur la plateforme Network Twenty One"],
+            typeSpeed:30,
+            backSpeed:30,
+            })
+    </script>
+
+<footer> 
+    <div class="container">
+    <div class="row d-flex flex-row  mt-4 ps-2">
+        <div class="col-12 col-md-6 col-lg-4 join">
+            <p><h2>Joignez-nous sur : </h2></p>
+            <div class="logo_link">
+                <a href="https://web.facebook.com/TwentyOneNetwor"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/twentyone-network-69b6a82b7"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="colcol-12 col-md-6 col-lg-4">
+            <div class="container">
+            <div class="row d-flex flex-column mt-3">
+                <form action="#" method="">
+                <div class="col mt-2">
+                    <input type="text" class="form-control" placeholder="Votre nom" aria-label="First name">
+                </div>
+                <div class="col mt-2">
+                    <input type="text" class="form-control" placeholder="Votre adresse mail" aria-label="mail">
+                </div>
+                <div class="col mt-2">
+                    <textarea class="form-control" placeholder="Laissez nous un message" id="floatingTextarea"></textarea>
+                </div>
+                <div class="col mt-2">
+                    <button class="btn btn-primary" type="submit">Envoyer</button>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    <div class="col mt-4 callContacts">
+        <h2>Nos contacts</h2>
+        <div class="contact_logo">
+            <p><span><i class="bi bi-telephone"></i> : </span><span>+243 976 031 447</span></p>
+            <p><span><i class="bi bi-telephone"></i> : </span><span> +243 976 619 119</span></p>
+            <p><span><i class="bi bi-telephone"></i> : </span><span>  +243 897 401 21</span></p>
+            <p><span><i class="bi bi-envelope-at-fill"></i>  : </span><span>automatecenter@info.com</span></p>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="container">
+    <div class="row mt-5 mb-0">
+        <div class="col">
+            <p> <i class="fa fa-copyright"></i>automatecenter</p>
+            <span>Tous droits réservés</span>
+            <a href="tonApp:Politik">Politique de confidentialité</a>
+            <a href="tonApp:condUtilisation">conditions d'utilisation</a>
+        </div>
+    </div>
+</div>
+</footer>
 </body>
 </html>
