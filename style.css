@@ -1,543 +1,152 @@
-*
+header .contact-informations
 {
-    margin: 0px;
-    padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22x;
+    color:#09143A;
+    font-size: 20px;
 }
 body
 {
-    background-color:white;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4,auto);
-    row-gap: 10px;
-}
-header
-{
-    width: 100vw;
-    height: 5vh;
-    background-image:linear-gradient(to left,#4b0fb3 30%,transparent 80%);
-
-}
-header span 
-{
-    display: none;
-}
-.toggle_bars
-{
-    display: none;
-}
-.nav
-{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 50px;
-    margin: 0px;
-}
-
-.nav a 
-{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-    color: yellow;
-    margin-right: 5px;
-}
-.nav a:hover
-{
-    color: red;
-}
-section
-{
-    width: 100vw;
-    height: 85vh;
-    position: relative;
-    background-image: url('Pictures/image-from-rawpixel-id-12921660-jpeg.jpg');
-    background-size:30%;
-    background-position:  85% -23px;
-    background-repeat: no-repeat;
-}
-section::before
-{
-    width: 80%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    background-image:linear-gradient(to right,#4b0fb3 55%,transparent 90%);
-}
-
-.content
-{ /*le style du contenu de la section*/
-    width: 35vw;
-    height: auto;
-    margin: 6rem 6rem; 
-    transition: all 1.0s ease;
-    animation:  margin_decal 1s ;
-    position: relative;
-    font-size: 20px;
-    color: rgb(177, 176, 176);
-    padding: 5px;
-}
-@keyframes margin_decal {
-    from{
-         margin: 6rem 1rem;
-    }
-    to{
-         margin: 6rem 6rem;
-    }
-}
-.content span
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-}
-.content .text
-{
-        text-align: left;
-}
-.content .secondPart
-{
-    color: yellow;
-}
-.content .thirdPart
-{
-    color: silver;
-}
-.members 
-{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-bottom: 1rem;
-    border-top: 1px solid black;
-    justify-content: center;
-}
-.members ~ .formImage
-{
-    width: 150px;
-    height: 150px;
     background-color: red;
-    border-radius: 50%;
-    transition: all 1s;
-    margin-top: 1rem;
-    position: relative;
 }
-.formImage
+nav
 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    background-color:#09143A; 
 }
-.members .formImage img
+.container-fluid a,#nav-links ul li a
 {
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 10px;
+    color: rgb(100,236,9);
+}
+ .carousel-inner::before
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:#a0c9f4a7;
+} 
+.carousel-item
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
-    border-left:10px solid yellow;
+    align-items: start;
+    height: 100vh;
+    min-height: 300px;
 }
 
-.members  .formImage .presentation
+.image-section
+{
+    position: absolute;
+    right: 300px;
+    top: 0px;
+    z-index: 2;
+}
+.carousel-caption
+{
+    z-index: 2;
+    width: 30vw;
+    margin-bottom: 13.5rem;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 
+{
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+}
+.carousel-caption p
+{
+    font-size: 20px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: #333333;
+}
+.carousel-caption p a
+{
+   background-color: rgb(100,236,7);
+   color: #09143A;
+   border-color: rgb(100,236,7);
+}
+/* About services */
+
+
+/* about member  */
+.member-img
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+}
+.member-img:hover
+{
+    cursor: pointer;
+}
+.member-img img 
+{
+    width: 100%;
+    height: 100%;
+}
+.member-description
+{
+    font-size: 20px;
+    text-align: left;
+    display: none;
+}
+.member-description:hover
+{
+    cursor: pointer;
+}
+.member-description i 
+{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(100,236,7);
+}
+.member-description a:hover i 
+{
+    color: #09143A;
+}
+div.member-info .member-img
 {
     display: none;
-    transition: all 3s;
-}
-.members  h2
-{
-    width: 10vw;
-    height: auto;
-    background-color: yellow;
-    position: absolute;
-    left: 0px;
-}
-.formImage.infoMember
-{/*a l'insertion de la classe infoMember de formImage*/
-    width: 150px;
-    height: 150px;
-    transition: all 0.5s;
     
 }
-.formImage.infoMember .presentation
-{/*le style de l'element presentation a l'insertion de la classe infoMember*/
+div.member-info .member-description
+{
     display: block;
-    text-align: center;
-    transition: all 3s;
+    transition: 3s all ease;
 }
-.formImage.infoMember img
-{/*le style de l'element presentation a l'insertion de la classe infoMember*/
-     transition: all 1s;
-    display: none;
-}
-.descriptions
-{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    /* border-top: 1px solid black; */
-    padding-bottom: 10px;
-    justify-content: center;
-}
-.description
-{
-    width: 25%;
-    color: silver;
-    transition: all 1s;
-    margin-left: 10px;
-}
-.descriptions .aboutUs
-{
-    width: 10vw;
-    height: auto;
-    background-color: yellow;
-    color: black;
-    position: absolute;
-    left: 0px;
-}
-.description h2:hover,.description:hover
-{
-    color: black;
-}
+/* About footer */
 footer
-{ /*le bas de la page*/
-	position : relative;
-	width: 100vw;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-    color:rgb(177, 176, 176);
-	background-color : #4b0fb3;
-}
-footer .contact 
 {
-	font-size: 25px;
-	text-align: center;
+    background-color: #09143A;
+    color:white;
 }
-footer .confident
-{
-	font-size: 25px;
-	text-align: center;
-}
-/*-----------------------------------------------------about style-------------------------------*/
-.container
-{/*l'element container des autres elements*/
-    width: 35%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 10% 35%;
-    padding: 10px;
-    justify-content: center;
-    position: relative;
-}
-.slider
-{ /*la mise en forme de cadre de bascule*/
-    width: 6vw;
-    height: 5vh;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    z-index: -1;
-    padding: 2px;
-    transition: all 0.5s;
-
-}
-.container input 
-{
-    display: none;/*faire disparaitre les inputs*/
-}
-.homeContainer,.aboutUsContainer,.skillsContainer,.contactContainer
-{
-    display: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.title
+footer .join a i
 {
     font-size: 30px;
-    font-family: 'century','Times New Roman', Times, serif;
-}
-label.home,label.aboutUs,label.contact,label.skills/*faire ceci pour tout le label ayant les classes selectionnees*/
-{
-    font-size: 22px;/*la taille de la police sera de 22 par defaut*/
-    color: silver;/*la couleur de la police sera blanche*/
-    margin-left: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    cursor: pointer;
-}
-#home:checked ~ .labels  label.home, /*si l'input home est coché alors */ 
-#aboutUs:checked ~ .labels  label.aboutUs,
-#contact:checked ~ .labels  label.contact,
-#skills:checked ~ .labels  label.skills
-{ /*on va faire ceci*/
-    color: white;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-#home:checked ~ .homeContainer /*tout le contenu de l'element seront afficher au click sur l'element*/
-{
-    display: block;
-    margin-top: -1.5rem;
-    color: white;
-}
-#home:checked ~ .homeContainer  .link_home a 
-{
-    font-size: 22px;
-    text-decoration: none;
-    color:white;
-}
-#home:checked ~ .homeContainer  .link_home
-{
-    width: 6vw;
-    height: auto;
-    background-color: black;
-    color:white;
-    padding: 5px;
-    margin: 15px 12.5rem;
-    text-align: center;
-}
-#home:checked ~ .homeContainer  .link_home:hover
-{
-    background-color: red;
-}
-#aboutUs:checked ~ .aboutUsContainer
-{
-    display: block;
-    margin-top: -1.5rem;
-     color: white;
-}
-#contact:checked ~ .contactContainer
-{
-    display: block;
-    margin-top: -1.5rem;
-     color: white;
-}
-#skills:checked ~ .skillsContainer
-{
-    display: block;
-    margin-top: -1.5rem;
-     color: white;
+    margin-left: 1rem;
+    color: rgb(100,236,9);
 }
 
-#home:checked ~ .labels  .slider
+@media screen and (max-width:576px){
+    .carousel-caption
 {
-    top: -2rem;
-    left:3.5%;
-    padding: 2px;
-}
-#aboutUs:checked ~ .labels  .slider
-{
-    width: 7vw;
-    top: -2rem;
-    left: 22.5%;
-    padding: 2px;
-}
-#contact:checked ~ .labels  .slider
-{
-    width: 7vw;
-    top: -2rem;
-    left: 45%;  
-}
-#skills:checked ~ .labels  .slider
-{
-    width: 5vw;
-    top: -2rem;
-    left: 67%;  
-}
-@media screen and (max-width:800px){
-    header
-    {
-        height: 50px;  
-        background-color : #4b0fb3;
-        position: relative;
-        text-align: center;
-        border-radius: 10px;
-    }
-    header span
-    {
-        display: inline;
-    }
-     header.show
-    {
-        height: 150px;
-        transition: all 0.5s;
-    }
-        header.show::before
-    {
-        content: "";
-        width: 100%;
-        height: 100%;  
-        background-color : rgba(0, 0, 0,0.7);
-        position: absolute;
-        left: 0px;
-    }
-    .nav.show 
-    {
-        display: flex;
-        margin-top: 1rem;
-    }
-    .nav 
-    {
-        flex-direction: column;
-        right: 7.5rem;
-        display: none;
-    } 
-    header span 
-    {
-         font-size: 25px;
-         color: yellow;
-         margin-top: 10px;
-    }
-    header .eventElement
-    {
-        color: rgb(161, 159, 159);
-    }
-    .toggle_bars
-    {
-        width: 2rem;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-    }
-    .bar 
-    {
-        width: 100%;
-        height: 5px;
-        margin-top: 2px;
-        background-color: black;
-        border-radius: 5px;
-        transition: all 0.5s;
-    }
-    header.show .B1
-    {
-        transform: rotate(50deg) translatey(10px);
-        background-color: red;
-    }
-    header.show .B2
-    {
-        display: none;
-    }
-     header.show .B3
-    {
-        transform: rotate(-50deg) translatey(-6px) translatex(-5px);
-        background-color: red;
-    }
-   section 
-   {
+
     width: 100%;
-    height: 50vh;
-    background-size: 60%;
-    background-position: 100% 100%; 
-    background-image: url('Pictures/image-from-rawpixel-id-12937292-png.png');
-   } 
-   section .content 
-   {
-    width: 52vw;
-    margin: 1.5rem 0px;
-    font-size: 18px;
-    animation: none;
-    margin-bottom: 1rem;
-   }
-    section .content span 
-   {
-    font-size: 25px;
-   }
-   .descriptions
-   {
-    flex-direction: column;
-    text-align: center;
-   }
-  .descriptions h2.aboutUs
-{/*le syle de la class aboutus de h2 sur le mobile*/
-    width: 30vw;
-    height: auto;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: yellow;
-    color: black;
-    position: relative;
-    left: 7rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: -3.5rem;
+    padding-left: 7.5px;
+    border-radius: none;
 }
-   .description
-   {
-    width: 80%;
-    color: rgb(61, 60, 60);
-    margin-top: 1rem;
-    margin-left: 2rem;
-   }
-   .members
-   {
-    width: 25%;
-    flex-direction: column;
-    margin-left: 6rem;
-    border-top: none;
-   }
-   .members h2
-   {
-    width: 30vw;
-    padding: 10px;
-    border-radius: 50%;
-    position: relative;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-   }
-   .formImage
-   {
-    margin-top: 1rem;
-   }
-   footer 
-   {
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
-/*--------------------------------------------about style-----------------------------------*/
-    .container
-    {
-        width: 90%;
-        height: auto;
-        margin: 0px;
-        left: 0.5rem;
-        top: 15vh;
-    }
-    label.home,label.aboutUs,label.contact,label.skills
-    {
-        margin-left: 10px;
-    }
-     #home:checked ~  .homeContainer .link_home
-     {
-        width: 15vw;
-        margin-left: 5rem;
-     }
-    #home:checked ~ .labels .slider
-    {
-        width: 17vw;
-        height: 3.5vh;
-        left: 2px;
-    }
-    #aboutUs:checked ~ .labels .slider
-    {
-        width: 22vw;
-        height: 3.5vh;
-        left: 4.5rem;
-    }
-    #contact:checked ~ .labels .slider
-    {
-        width: 21vw;
-        height: 3.5vh;
-        left: 10rem;
-    }
-    #skills:checked ~ .labels .slider
-    {
-        width: 18vw;
-        height: 3.5vh;
-        left: 15rem;
-    }
+.member-img img 
+{
+    display: none;
+}
 }
